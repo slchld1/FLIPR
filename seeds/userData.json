@@ -1,1 +1,9 @@
-// User login Data
+[
+
+    {
+        "name": "Minjae",
+        "email": "jaecho203@gmail.com",
+        "id": "minjae203",
+        "password": "alswo203"
+    }
+]
