@@ -1,5 +1,5 @@
 // seeds
-const sequelize = require('./config/connection');
+const sequelize = require('../config/connection');
 const { Customer } = require('../models');
 
 const userData = require('./userData.json');
