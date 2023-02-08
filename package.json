@@ -18,6 +18,8 @@
         "express-session": "^1.17.1",
         "mysql2": "^2.2.5",
         "sequelize": "^6.3.5",
-        "popups": "^1.1.3"
+        "popups": "^1.1.3",
+        "passport": "^0.6.0",
+        "passport-google-oauth": "2.0.0"
     }
 }
