@@ -1,0 +1,158 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.col-12 {
+  padding: 0;
+  margin: 0;
+}
+
+/* .container {
+  vertical-align: middle;
+  display: grid;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+} */
+
+#index-navbar a {
+  flex-grow: 11;
+}
+
+#navbarSupportedContent {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+#index-link .nav-item {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.selected-nav-link {
+  font-weight: bold;
+}
+
+
+.navbar{
+  border-bottom: #111 6px solid;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.04);
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+}
+.navbar-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-item {
+  list-style-type: none; 
+  padding-right: 2em;
+}
+
+.fa-user {
+  padding-left: 10px;
+}
+
+.fa-plus {
+  padding-left: 8px;
+}
+
+/* Footer */
+.page-footer { 
+  /* margin-top: 30px; */
+   background-color: #111;
+  color: #fff;
+  width:100vw;
+  text-align: center;
+}  
+
+.login {
+  border-right: 1px solid #c4c4c4;
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+}
+
+.join {
+  padding-left: 10px;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: #111;
+  color: #fff;
+  width:100vw;
+  text-align: center;
+} 
+
+@media only screen and (max-width: 760px){
+  .signbtn, .logbtn, .add-class-btn{
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  /* .page-footer {
+    padding: 20px;
+    width: 100vw;
+    height: 70vh;
+    margin-bottom: 0;
+  } */
+}
+
+@media only screen and (max-width: 599px){
+  .submit-form-div {
+    width: 350px;
+  }
+
+  .signbtn, .logbtn, .add-class-btn{
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  /* .page-footer {
+    padding: 20px;
+    width: 100vw;
+    height: 70vh;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  */
+}
