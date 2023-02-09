@@ -29,8 +29,21 @@ module.exports = function (passport) {
                     customer = await Customer.create(newCustomer)
                     done(null, customer)
                 }
+                    } catch (err) {
+                console.error(err)
+                }
             }
-        }
         )
     )
+    passport.serializeUser((customer, done) => {
+        done(null, customer.id)
+    })
+    
+      // used to deserialize the customer
+    passport.deserializeUser((id, done) => {
+        Customer.findById(id, (err, customer) => {
+                done(err, customer);
+            });
+    })
+
 }
