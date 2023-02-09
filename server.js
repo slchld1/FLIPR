@@ -4,6 +4,7 @@ const passport = require('passport');
 const path = require('path');
 const sequelize = require('./config/connection');
 const hbs = expHandle.create({});
+const session = require('express-session')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -19,6 +20,12 @@ app.use(require('./controllers/HomePage'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+//session
+app.use(session({
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true 
+}))
 //middleware passport
 app.use(passport.initialize());
 app.use(passport.session());
