@@ -5,4 +5,9 @@ router.get('/', async (req, res) => {
     res.render('body');
 });
 
+router.get('/join', async(req, res) => {
+    res.render('join');
+});
+
+
 module.exports = router;

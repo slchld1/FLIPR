@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/join.css">
   <title>FLIPR</title>
 </head>
 
@@ -31,7 +32,14 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">SHOP</a></li>
+                        <li class="nav-item active">
+                        {{#if home}}
+                        <a class="nav-link selected-nav-link" href="/">Home</a>
+                        {{else}}
+                        <a class="nav-link" href="/">Home</a>
+                        {{/if}}
+                    </li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="/shop">SHOP</a></li>
                         
                         <div class="input-group">
                         <input type="text" class="form-control border-end-0" placeholder="Search" aria-label="form" aria-describedby="form">
@@ -79,15 +87,16 @@
 
 {{{ body }}}
 
+
 <!-- Footer -->
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<footer class="footer text-center text-white">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Instagram -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -95,7 +104,7 @@
       ></a>
       <!-- Tiktok -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -103,7 +112,7 @@
       ></a>
       <!-- Facebook -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -111,7 +120,7 @@
       ></a>
       <!-- Twitter -->
        <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -122,7 +131,7 @@
   </div>
   <!-- Grid container -->
   <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     Copyright © 2023 FLIPR. All Rights Reserved.
   </div>
   <!-- Copyright -->

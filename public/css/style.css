@@ -1,9 +1,12 @@
 html {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
 body {
+  position:relative;
   font-size: inherit;
   line-height: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,6 +15,8 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  margin:0;
+  padding:0;
 }
 
 .col-12 {
@@ -38,7 +43,7 @@ body {
 .navbar-brand {
   font-size: 36px;
   font-weight: bold;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 #index-link .nav-item {
@@ -51,10 +56,9 @@ body {
   font-weight: bolder;
 }
 
-.selected-nav-link {
+/* .selected-nav-link {
   font-weight: bold;
-}
-
+} */
 
 .navbar{
   border-bottom: #111 6px solid;
@@ -70,13 +74,12 @@ body {
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link {
+
+/* .navbar-nav .nav-link {
   padding-right: 0;
-  padding-left: 0;
-}
-.navbar-nav .dropdown-menu {
-  position: static;
-}
+  padding-left: 0;  
+} */
+
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -88,7 +91,7 @@ body {
 }
 
 .fa-user {
-  padding-left: 10px;
+  padding-left: 14px;
 }
 
 .fa-plus {
@@ -98,7 +101,7 @@ body {
 /* Footer */
 .page-footer { 
   /* margin-top: 30px; */
-   background-color: #111;
+  background-color: #111;
   color: #fff;
   width:100vw;
   text-align: center;
@@ -107,7 +110,7 @@ body {
 .login {
   border-right: 1px solid #c4c4c4;
   display: inline-block;
-  float: left;
+  /* float: left; */
   padding: 0 15px;
 }
 
@@ -115,12 +118,21 @@ body {
   padding-left: 10px;
 }
 
-.footer {
-  margin-top: 30px;
-  background-color: #111;
-  color: #fff;
-  width:100vw;
+.container {
+margin-top: 10px
+}
+
+.shopbutton {
+  margin-top: -25px;
   text-align: center;
+}
+
+.footer { 
+  position: absolute;
+  bottom:0;
+  left:0;
+  background-color: black;
+  width: 100%;
 } 
 
 @media only screen and (max-width: 760px){
