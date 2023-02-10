@@ -11,10 +11,7 @@ router.post('/', (req, res) => {
     var email = req.body.email;
     var password = req.body.password;
 
-    db.connect(function(err) {
-        if (err) throw err
-
-        db.query(`SELECT * FROM customer WHERE email = ${email} AND password = ${password}`, function(err, result){
+    db.query(`SELECT * FROM customer WHERE email = ${email} AND password = ${password}`, function(err, result){
             if(err) throw err
     })
     if(Object.keys(result).length > 0){
@@ -38,5 +35,4 @@ router.post('/', (req, res) => {
                     };
         })
     })
-})
 module.exports = router;
