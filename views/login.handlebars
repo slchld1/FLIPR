@@ -9,7 +9,7 @@
 
               <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
               <p class="text-dark-50 mb-5">Don't have an account? <a class="nav-link text-dark-50 fw-bold selected-nav-link" href="/join"><u>Join</a></u></p>
-
+              <form class="login-form">
               <div class="form-outline form-dark mb-4">
                 <input type="email" id="typeEmailX" class="form-control form-control-lg" />
                 <label class="form-label" for="typeEmailX">*Email</label>
@@ -26,8 +26,8 @@
               <hr style="width:100%;text-align:left;margin-left:0"> 
 
               {{!-- Sign with Google --}}
-              <a href="/auth/google"><img class="googleimg card-img-top img-redirect" src="/images/btn_google_signin.png" alt="google signin">
-              </a>
+              {{!-- <a href="/auth/google"><img class="googleimg card-img-top img-redirect" src="/images/btn_google_signin.png" alt="google signin">
+              </a> --}}
 
               {{!-- <a class="google text-redirect my-signin2" href="/">
                <div id="g_id_onload"
@@ -45,6 +45,7 @@
               </div> --}}
           
               </div>
+              </form>
             </div>
           </div>
         </div>

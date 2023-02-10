@@ -5,17 +5,14 @@ const path = require('path');
 const sequelize = require('./config/connection');
 const hbs = expHandle.create({});
 const session = require('express-session')
+const routes = require('./controllers')
+
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-
-
-app.use(express.static(path.join(__dirname, 'public')))
-app.use(require('./controllers/HomePage'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -23,9 +20,20 @@ app.use(express.urlencoded({ extended: true }));
 //session
 app.use(session({
     secret: 'keyboard cat',
+    cookie: {},
     resave: true,
-    saveUninitialized: true 
-}))
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+}));
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(routes);
+
 //middleware passport
 app.use(passport.initialize());
 app.use(passport.session());

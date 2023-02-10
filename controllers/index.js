@@ -1,15 +1,10 @@
 // Routers
-const router = require('express').Router();
-const { ensureAuth, ensureGuest } = require('../middleware/auth')
-const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
+const router = require('express').Router()
+const apiRoutes = require('./api/index');
+const homeRoutes = require('./HomePage.js');
 
-router.get('/', ensureGuest, (req, res) => {
-    res.render('login')
-})
-
-router.get('/login', ensureAuth, async(req, res) => {
-    res.render('index', {userinfo: req.user})
+router.get('/', (req, res) => {
+    res.render('body')
 })
 
 router.use('/', homeRoutes);
