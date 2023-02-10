@@ -5,5 +5,11 @@
         "name": "Minjae",
         "email": "jaecho203@gmail.com",
         "password": "alswo203"
+    },
+    {
+        "id": 2,
+        "name": "oslee",
+        "email": "oslee@gmail.com",
+        "password": "absdr1234"
     }
 ]

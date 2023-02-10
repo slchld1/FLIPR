@@ -42,4 +42,8 @@ router.get('/cart', async(req, res) => {
     res.render('cart');
 });
 
+router.get('/myaccount', async(req, res) => {
+    res.render('myacct');
+});
+
 module.exports = router;

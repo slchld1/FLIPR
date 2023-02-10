@@ -1,18 +1,17 @@
 html {
   width:100%;
   height:100%;
-  margin:0;
-  padding:0;
 }
 
 body {
-  position:relative;
   font-size: inherit;
   line-height: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fff;
-  align-items: center; 
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Jost', sans-serif;
 }
 
 .col-12 {
@@ -20,13 +19,18 @@ body {
   margin: 0;
 }
 
-/* .container {
+.container {
   vertical-align: middle;
   display: grid;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
-} */
+  margin-top: 10px
+}
+
+.form-card {
+  margin: 0 auto;
+}
 
 #index-navbar a {
   flex-grow: 11;
@@ -94,7 +98,7 @@ body {
 }
 
 .fa-plus {
-  padding-left: 8px;
+  padding-left: 5px;
 }
 
 .login {
@@ -108,8 +112,9 @@ body {
   padding-left: 10px;
 }
 
-.container {
-margin-top: 10px
+.joincard {
+  margin-top: 15%;
+  padding: 20px;
 }
 
 .shopbutton {
@@ -120,12 +125,17 @@ margin-top: 10px
 .footer { 
   z-index: inherit;
   margin: auto;
-  position: relative;
+  /* position: relative; */
   bottom:0;
   left:0;
   background-color: black;
   width: 100%;
+  margin-top: 70px;
 } 
+
+.icons {
+  margin-bottom: 40px;
+}
 
 @media only screen and (max-width: 760px){
   .signbtn, .logbtn, .add-class-btn{

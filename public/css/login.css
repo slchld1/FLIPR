@@ -1,5 +1,40 @@
+body {
+  padding-top: 160px;
+}
+
+.container {
+    vertical-align: middle;
+    display: grid;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+  
+.form-card {
+    margin: 0 auto;
+}
+
 .googleimg {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 60%;
+}
+
+.form-outline .form-control {
+    border: 1px solid #ddd;
+    min-height: auto;
+    padding: 0.32rem 0.75rem;
+    background: transparent;
+    transition: all .2s linear;
+}
+
+.input-note {
+    font-size: 0.8rem;
+    text-align: left;
+    text-indent: 2.3%;
+}
+
+.form-card {
+    margin: 0 auto;
 }
