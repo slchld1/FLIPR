@@ -30,14 +30,6 @@ Customer.init(
                 isEmail: true,
             },
         },
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                len: [6],
-            }
-        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
