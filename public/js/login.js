@@ -12,8 +12,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        console.log('success')
-        document.location.replace('/');
+        document.location.replace('/shop');
       } else {
         alert('Failed to log in');
       }
