@@ -19,7 +19,7 @@ router.get('/', withAuth, async (req, res) => {
     }   catch (err) {
             res.status(500).json(err);
     }
-})
+});
 
 router.get('/join', async(req, res) => {
     res.render('join');
@@ -34,9 +34,23 @@ router.get('/login', async(req, res) => {
     res.render('login');
 });
 
-router.get('/shop', async(req, res) => {
-    res.render('shop');
-});
+router.get('/shop', withAuth, async (req, res) => {
+    try {
+        const userData = await Customer.findAll({
+            attributes: {exclude: ['password']},
+            order: [['name', 'ASC']],
+        });
+
+        const users = userData.map((project) => project.get({ plain: true }));
+
+        res.render('shop', {
+            users,
+            logged_in: req.session.logged_in,
+        });
+    }   catch (err) {
+            res.status(500).json(err);
+    }
+})
 
 router.get('/cart', async(req, res) => {
     res.render('cart');

@@ -48,38 +48,23 @@
                     </ul>
                     {{#if logged_in}}
                     <li class="nav-item login">
-                        {{#if myaccount}}
                         <i class="fa-regular fa-user"></i>
                         <a class="nav-link selected-nav-link" href="/myaccount">My account</a>
-                        {{else}}
-                        <i class="fa-regular fa-user"></i>
-                        <a class="nav-link" href="/myaccount">My account</a>
-                        {{/if}}
                     </li>
                     <li class="nav-item login">
-                        <a class="nav-link"><span id="log-in-out">Log Out</span></a>
+                        <a class="nav-link selected-nav-link"><span id="log-in-out">Log Out</span></a>
                     </li>
                     {{else}}
                     <li class="nav-item login">
-                        {{#if login}}
                         <i class="fa-regular fa-user"></i>
                         <a class="nav-link selected-nav-link" href="/login">Log In</a>
-                        {{else}}
-                        <i class="fa-regular fa-user"></i>
-                        <a class="nav-link" href="/login">Log In</a>
-                        {{/if}}
                     </li>
                     {{!-- <span class="separator d-inline-block position-relative mx-1"></span> --}}
                     <li class="nav-item join">
-                        {{#if signup}}
                         <i class="fa-solid fa-plus"></i>
                         <a class="nav-link selected-nav-link" href="/join">Join</a>
-                        {{else}}
-                        <i class="fa-solid fa-plus"></i>
-                        <a class="nav-link" href="/join">Join</a>
                         {{/if}}
                     </li>
-                        {{/if}}
                   <a class="nav-link" href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
         </nav>
@@ -139,7 +124,9 @@
 <!-- Footer -->
 
 {{!-- <script src="/public/js/join.js"></script> --}}
+{{#if logged_in}}
 <script src="js/logout.js"></script>
+{{/if}}
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
