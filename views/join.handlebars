@@ -10,17 +10,17 @@
               <p class="text-dark-50 mb-5">Already have an account? <a class="nav-link text-dark-50 fw-bold selected-nav-link" href="/login"><u>Log in</a></u></p>
 
               <div class="form-outline form-dark mb-4">
-                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
-                <label class="form-label" for="typeEmailX">*Name</label>
+                <input type="name" id="typeNameX" class="form-control form-control-lg" maxlength="30" required>
+                <label class="form-label" for="typeNameX">*Name</label>
               </div>
 
               <div class="form-outline form-dark mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                <label class="form-label" for="typePasswordX">*Email</label>
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" required>
+                <label class="form-label" for="typeEmailX">*Email</label>
               </div>
 
               <div class="form-outline form-dark mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
                 <label class="form-label" for="typePasswordX">*Password</label>
                <div class="input-note">*Min. length 8 characters, must contain at least one lowercase character, one uppercase and one number.</div>
               </div>
