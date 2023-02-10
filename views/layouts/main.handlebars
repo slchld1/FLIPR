@@ -46,7 +46,7 @@
                         <span class="input-group-text bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
                     </ul>
-                    {{#if loggedIn}}
+                    {{#if logged_in}}
                     <li class="nav-item login">
                         {{#if myaccount}}
                         <i class="fa-regular fa-user"></i>
@@ -57,7 +57,7 @@
                         {{/if}}
                     </li>
                     <li class="nav-item login">
-                        <a class="nav-link" href="/logout"><span id="log-in-out">Log Out</span></a>
+                        <a class="nav-link"><span id="log-in-out">Log Out</span></a>
                     </li>
                     {{else}}
                     <li class="nav-item login">
@@ -136,9 +136,10 @@
   </div>
   <!-- Copyright -->
 </footer>
- <!-- Footer -->
+<!-- Footer -->
 
 {{!-- <script src="/public/js/join.js"></script> --}}
+<script src="js/logout.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
