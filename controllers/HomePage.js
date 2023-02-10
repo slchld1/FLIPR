@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const withAuth = require('../utils/auth');
 const { Customer } = require('../models');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const userData = await Customer.findAll({
             attributes: {exclude: ['password']},

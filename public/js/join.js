@@ -12,3 +12,27 @@
 //   );
 //   google.accounts.id.prompt(); // also display the One Tap dialog
 // }
+const registerFormHandler = async (event) => {
+    event.preventDefault();
+
+    const name = document.querySelector('#typeNameX')
+    const email = document.querySelector('#typeEmailX')
+    const password = document.querySelector('#typePasswordX')
+
+    if (name && email && password) {
+        const response = await fetch('api/users/register', {
+            method: 'POST',
+            body: JSON.stringFy({ name, email, password }),
+            headers: { 'Content-type': 'application/json' },
+        });
+
+        if (response.ok) {
+            document.location.replace('/login');
+        }else {
+            alert('User already exists');
+        }
+    }
+}
+document
+    .querySelector('.signUp')
+    .addEventListener('submit', registerFormHandler)
