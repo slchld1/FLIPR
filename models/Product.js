@@ -27,6 +27,13 @@ Products.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        customer_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'customer',
+              key: 'id',
+            },
+          },
     },
     {
         sequelize,
@@ -38,4 +45,3 @@ Products.init(
     );
     
     module.exports = Products;
-    
