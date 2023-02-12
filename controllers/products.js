@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Products } = require('../models/Product')
+const { Products } = require('../models')
 
 router.get('/', async (req, res) => {
     try {
         const dbProduct = await Products.findAll({
         include: [
-          {
+        {
             model: Products,
             attributes:[
                 'id',
@@ -14,23 +14,23 @@ router.get('/', async (req, res) => {
                 'brand',
                 'media',
             ],
-          },
-        ],
-      });
-  
-      const products = dbProduct.map((product) =>
+        },
+    ],
+});
+
+const products = dbProduct.map((product) =>
         product.get({ plain: true })
-      );
-  
-      res.render('shop', {
+    );
+
+    res.render('shop', {
         products,
-      });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
+    });
+} catch (err) {
+    console.log(err);
+    res.status(500).json(err);
     }
-  });
-  
+});
+
 
 router.get('/:id', async(req, res) => {
     try {
