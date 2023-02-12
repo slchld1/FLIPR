@@ -4,22 +4,21 @@ const { Products } = require('../models')
 router.get('/', async (req, res) => {
     try {
         const dbProduct = await Products.findAll({
-        include: [
-        {
-            model: Products,
-            attributes:[
-                'id',
-                'title',
-                'detail',
-                'brand',
-                'media',
+            include: [
+                {
+                    model: Products,
+                    attributes: [
+                        'id',
+                        'title',
+                        'detail',
+                        'brand',
+                        'media',
+                    ],
+                },
             ],
-        },
-    ],
-});
-
-const products = dbProduct.map((product) =>
-        product.get({ plain: true })
+        });
+const products = dbProduct.map((products) =>
+        products.get({ plain: true })
     );
 
     res.render('shop', {
