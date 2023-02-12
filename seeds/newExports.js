@@ -1,8 +1,5 @@
 const { Products } = require('../models')
 
-
-
-
 const productData = 
     [{
         "id": 1,
@@ -40,7 +37,6 @@ const productData =
         "media":"https://images.asos-media.com/products/tommy-jeans-linear-back-logo-classic-fit-t-shirt-in-white/204039075-1-white"
     }
     ]
-
 
 const seedProducts = () => Products.bulkCreate(productData)
 module.exports = seedProducts;
