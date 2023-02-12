@@ -1,5 +1,6 @@
 // models for users
 const Customer = require('./Customer');
+const Products = require('./Product')
 // const Product = require('./Product');
 
 // Customer.hansMany(Product, {
@@ -11,4 +12,4 @@ const Customer = require('./Customer');
 //   });
 
 // Product should be added
-module.exports = { Customer };
+module.exports = { Customer, Products };
