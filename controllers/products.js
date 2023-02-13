@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
                 'title',
                 'detail',
                 'brand',
+                'currency',
                 'media',
             ],
         });
@@ -35,6 +36,7 @@ router.get('/:id', async (req, res) => {
                         'title',
                         'detail',
                         'brand',
+                        'currency',
                         'media',
                     ],
         });
