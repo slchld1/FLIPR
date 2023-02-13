@@ -1,21 +1,19 @@
 <div class="row" id="product-card">
-  <div class="col-3">
-    {{!-- {{#each products}} --}}
-    <div class="card">
-      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-      <img src="https://images.asos-media.com/products/tommy-jeans-check-cord-overshirt-in-off-white/204040154-1-ancientwhitecheck" class="img-fluid product-image"/>
+{{#each products}}
+<div class="col-3">
+  <div class="card">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img src="{{this.media}}" class="img-fluid product-image"/>
       <a href="#!">
         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
       </a>
-      </div>
-    
-      <div class="card-body">
-        {{!-- {{title}} --}}
-        <h5 class="card-title">{{products.title}}</h5>
-        {{!-- {{price}} --}}
-        <p class="card-text">$80</p>
-        <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
-      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{this.title}}</h5>
+      <p class="card-text">$80</p>
+      <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
+    </div>
   </div>
-  </div>
+</div>
+{{/each}}
 </div>
