@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productCards = document.querySelectorAll("#product-card");
-  
-    productCards.forEach(productCard => {
-      const addToCartButton = productCard.querySelector(".cart-button");
+
+
+    productCards.forEach(productCards => {
+      const addToCartButton = productCards.querySelector(".cart-button");
   
       addToCartButton.addEventListener("click", e => {
         e.preventDefault();
