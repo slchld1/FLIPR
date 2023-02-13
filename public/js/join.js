@@ -27,7 +27,7 @@ const registerFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/myaccount');
+            document.location.replace('/login');
         }else {
             alert('User already exists');
         }
