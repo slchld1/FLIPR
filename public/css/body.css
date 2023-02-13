@@ -1,7 +1,13 @@
-.jumbotron {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 90%;
+.jumbotron-image {
+    padding-left: 100px;
 }
+
+.jumbotron-text {
+    padding-right: 30px;
+} 
+
+.hero {
+    justify-content: center;  
+    margin: 0 auto;
+    float: none;
+} 

@@ -65,10 +65,10 @@
                     {{#if logged_in}}
                     <li class="nav-item login">
                         {{#if myaccount}}
-                        <i class="fa-regular fa-user"></i>
+                        {{!-- <i class="fa-regular fa-user"></i> --}}
                         <a class="nav-link selected-nav-link" href="/myaccount">My account</a>
                         {{else}}
-                        <i class="fa-regular fa-user"></i>
+                        {{!-- <i class="fa-regular fa-user"></i> --}}
                         <a class="nav-link" href="/myaccount">My account</a>
                         {{/if}}
                     </li>
@@ -78,20 +78,20 @@
                     {{else}}
                     <li class="nav-item login">
                         {{#if login}}
-                        <i class="fa-regular fa-user"></i>
+                        {{!-- <i class="fa-regular fa-user"></i> --}}
                         <a class="nav-link selected-nav-link" href="/login">Log In</a>
                         {{else}}
-                        <i class="fa-regular fa-user"></i>
+                        {{!-- <i class="fa-regular fa-user"></i> --}}
                         <a class="nav-link" href="/login">Log In</a>
                         {{/if}}
                     </li>
                     
                     <li class="nav-item join">
                         {{#if signup}}
-                        <i class="fa-solid fa-plus"></i>
+                        {{!-- <i class="fa-solid fa-plus"></i> --}}
                         <a class="nav-link selected-nav-link" href="/join">Join</a>
                         {{else}}
-                        <i class="fa-solid fa-plus"></i>
+                        {{!-- <i class="fa-solid fa-plus"></i> --}}
                         <a class="nav-link" href="/join">Join</a>
                         {{/if}}
                     </li>

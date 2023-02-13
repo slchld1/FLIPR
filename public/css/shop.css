@@ -3,13 +3,16 @@ body {
 }
 
 #product-card {
-    width: 80%;
-    margin: 50px auto;
-    margin-top: 30px;
-    padding: 20px;
-    vertical-align: middle;
-    display:grid;
+    width: 100%;
+    justify-content: center;  
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px; 
   }
+
+.eachcard {
+  margin: 20px;
+}
 
 .product-image {
   width: 100%;
