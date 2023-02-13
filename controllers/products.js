@@ -4,34 +4,29 @@ const { Products } = require('../models')
 router.get('/', async (req, res) => {
     try {
         const dbProduct = await Products.findAll({
-            include: [
-                {
-                    model: Products,
-                    attributes: [
-                        'id',
-                        'title',
-                        'detail',
-                        'brand',
-                        'media',
-                    ],
-                },
+            attributes: [
+                'id',
+                'title',
+                'detail',
+                'brand',
+                'media',
             ],
         });
-const products = dbProduct.map((products) =>
-        products.get({ plain: true })
-    );
+        const products = dbProduct.map((products) =>
+            products.get({ plain: true })
+        );
 
-    res.render('shop', {
-        products,
-    });
-} catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+        res.render('shop', {
+            products,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
     }
 });
 
 
-router.get('/:id', async(req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const productDB = await Products.findByPk(req.params.id, {
             include: [
@@ -47,9 +42,9 @@ router.get('/:id', async(req, res) => {
                 },
             ],
         });
-        const product = productDB.get({ plain: true});
-        res.render('product', {product})
-    } catch(err) {
+        const product = productDB.get({ plain: true });
+        res.render('product', { product })
+    } catch (err) {
         console.log(err)
         res.status(500).json(err)
     }

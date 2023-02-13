@@ -26,7 +26,7 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
-            validate:{ 
+            validate: {
                 isEmail: true,
             },
         },
@@ -37,20 +37,20 @@ Customer.init(
                 len: [8],
             },
         },
-        },
-        {
-            hooks: {
-                beforeCreate: async (newData) => {
-                    newData.password = await bcrypt.hash(newData.password, 10)
-                    return newData
-                },
+    },
+    {
+        hooks: {
+            beforeCreate: async (newData) => {
+                newData.password = await bcrypt.hash(newData.password, 10)
+                return newData
             },
-            sequelize,
-            timestamps: false,
-            freezeTableName: true,
-            underscored: true,
-            modelName: 'customer',
-        }
-    );
+        },
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'customer',
+    }
+);
 
-    module.exports = Customer;
+module.exports = Customer;
