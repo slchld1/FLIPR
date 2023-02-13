@@ -23,6 +23,10 @@ Products.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        currency: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
         media: {
             type: DataTypes.STRING,
             allowNull: false,

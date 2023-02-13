@@ -6,6 +6,7 @@ const productData =
         "title": "Tommy Jeans check cord overshirt in off white",
         "brand": "Tommy Jeans",
         "detail": "Shirts",
+        "currency": "80",
         "media": "https://images.asos-media.com/products/tommy-jeans-check-cord-overshirt-in-off-white/204040154-1-ancientwhitecheck"
     },
     {
@@ -13,6 +14,7 @@ const productData =
         "title": "The North Face Raglan Redbox sweatshirt in white",
         "detail": "Hoodies & Sweatshirts",
         "brand": "The North Face",
+        "currency": 74,
         "media": "https://images.asos-media.com/products/the-north-face-raglan-redbox-sweatshirt-in-white/203212064-1-white"
     },
     {
@@ -20,6 +22,7 @@ const productData =
         "title": "The North Face Saikuru cropped puffer jacket in black",
         "detail": "Coats & Jackets",
         "brand": "The North Face",
+        "currency": 210,
         "media": "https://images.asos-media.com/products/the-north-face-saikuru-cropped-puffer-jacket-in-black-exclusive-at-asos/203314409-1-black"
     },
     {
@@ -27,6 +30,7 @@ const productData =
         "title": "The North Face 100 Glacier 1/4 zip fleece in black",
         "detail": "Fleece by The North Face Regular fit",
         "brand": "The North Face",
+        "currency": 50,
         "media":  "https://images.asos-media.com/products/the-north-face-100-glacier-1-4-zip-fleece-in-black/24381416-1-tnfblack"
     },
     {
@@ -34,6 +38,7 @@ const productData =
         "title": "Tommy Jeans linear back logo classic fit t-shirt in white",
         "detail": "T-Shirts & Vests",
         "brand": "Tommy Jeans",
+        "currency": 35, 
         "media":"https://images.asos-media.com/products/tommy-jeans-linear-back-logo-classic-fit-t-shirt-in-white/204039075-1-white"
     }
     ]
