@@ -77,7 +77,9 @@ body {
   padding-right: 0;
   padding-left: 0;  
 } */
-
+.nav-link {
+  cursor: pointer;
+}
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
