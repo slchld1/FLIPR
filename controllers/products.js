@@ -29,9 +29,6 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const productDB = await Products.findByPk(req.params.id, {
-            include: [
-                {
-                    model: Products,
                     attributes: [
                         'id',
                         'title',
@@ -39,11 +36,9 @@ router.get('/:id', async (req, res) => {
                         'brand',
                         'media',
                     ],
-                },
-            ],
         });
         const product = productDB.get({ plain: true });
-        res.render('product', { product })
+        res.render('shop', { product })
     } catch (err) {
         console.log(err)
         res.status(500).json(err)
