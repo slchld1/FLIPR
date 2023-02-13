@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/shop');
+        document.location.replace('/products');
       } else {
         alert('Failed to log in');
       }
