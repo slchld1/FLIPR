@@ -1,14 +1,13 @@
 <section class="product-main">
     <div class="main-product-container">
-        <div class="main-product-image">
-            <img src="{{product.media}}">
-        </div>
+            <img class="main-product-image" src="{{product.media}}">
     <div class="product-details">
-    <h1>{{product.title}}</h1>
-    <p>{{product.detail}}</p>
-    <p>${{product.currency}}</p>
-    
-    <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
+        <div class="product-details-wrap">
+            <h3>{{product.title}}</h3>
+            <p>{{product.detail}}</p>
+            <p>${{product.currency}}</p>
+            <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
+        </div>
     </div>
     </div>
 </section>

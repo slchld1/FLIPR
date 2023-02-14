@@ -20,7 +20,14 @@ body {
 }
 
 /* products page */
+
+.product-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main-product-container {
+  width: 80%;
   display: flex;
   flex-direction: row;
   border: 1px solid;
@@ -30,4 +37,13 @@ body {
 .main-product-img {
   width: 100%;
   height: 100%;
+}
+
+.product-details{
+  display: flex;
+  justify-content: center;
+}
+.product-details-wrap{
+  padding: 4rem;
+  width: 40rem;
 }
