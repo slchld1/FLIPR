@@ -1,6 +1,6 @@
 // models for users
 const Customer = require('./Customer');
-const Products = require('./Product')
+const Products = require('./Product');
 
 Customer.hasMany(Products, {
     foreignKey: 'customer_id',

@@ -3,8 +3,6 @@ const {Customer} = require('../../models');
 const db = require('../../config/connection')
 const bcrypt = require('bcrypt');
 
-
-
 const router = express.Router();
 
 router.post('/', async (req, res) => {

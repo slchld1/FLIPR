@@ -1,5 +1,5 @@
-.cart-card {
-    justify-content: center;  
+.shopping-cart {
     margin: 0 auto;
-    float: none; 
+    float: none;
+    /* padding: 5rem; */
 }

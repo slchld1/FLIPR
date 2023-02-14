@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productCards = document.querySelectorAll("#product-card");
 
-
     productCards.forEach(productCards => {
       const addToCartButton = productCards.querySelector(".cart-button");
   

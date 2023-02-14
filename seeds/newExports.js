@@ -11,19 +11,19 @@ const productData =
     },
     {
         "id": 2,
-        "title": "The North Face Raglan Redbox sweatshirt in white",
-        "detail": "Hoodies & Sweatshirts",
-        "brand": "The North Face",
-        "currency": 74,
-        "media": "https://images.asos-media.com/products/the-north-face-raglan-redbox-sweatshirt-in-white/203212064-1-white"
-    },
-    {
-        "id": 3,
         "title": "The North Face Saikuru cropped puffer jacket in black",
         "detail": "Coats & Jackets",
         "brand": "The North Face",
         "currency": 210,
         "media": "https://images.asos-media.com/products/the-north-face-saikuru-cropped-puffer-jacket-in-black-exclusive-at-asos/203314409-1-black"
+    },
+    {
+        "id": 3,
+        "title": "The North Face Raglan Redbox sweatshirt in white",
+        "detail": "Hoodies & Sweatshirts",
+        "brand": "The North Face",
+        "currency": 74,
+        "media": "https://images.asos-media.com/products/the-north-face-raglan-redbox-sweatshirt-in-white/203212064-1-white"
     },
     {
         "id": 4,

@@ -51,10 +51,6 @@ body {
   margin-right: 20px;
 }
 
-/* .selected-nav-link {
-  font-weight: bold;
-} */
-
 .navbar {
   border-bottom: #111 6px solid;
   box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.04);
@@ -73,13 +69,10 @@ body {
   list-style: none;
 }
 
-/* .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;  
-} */
 .nav-link {
   cursor: pointer;
 }
+
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

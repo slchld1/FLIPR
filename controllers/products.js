@@ -27,7 +27,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-
 router.get('/:id', async (req, res) => {
     try {
         const productDB = await Products.findByPk(req.params.id, {
