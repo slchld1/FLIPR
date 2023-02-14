@@ -18,3 +18,16 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* products page */
+.main-product-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  padding: 2rem;
+}
+
+.main-product-img {
+  width: 100%;
+  height: 100%;
+}
