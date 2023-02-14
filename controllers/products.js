@@ -41,7 +41,9 @@ router.get('/:id', async (req, res) => {
                     ],
         });
         const product = productDB.get({ plain: true });
-        res.render('product', { product })
+        res.render('product', { 
+            product, 
+            logged_in: req.session.logged_in,})
     } catch (err) {
         console.log(err)
         res.status(500).json(err)
