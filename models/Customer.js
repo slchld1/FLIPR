@@ -37,6 +37,7 @@ Customer.init(
                 len: [8],
             },
         },
+       
     },
     {
         hooks: {

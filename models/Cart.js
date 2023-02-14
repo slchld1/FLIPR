@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-const Customer = require('./Customer');
-const Product = require('./Product');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+const Customer = require("./Customer");
+const Product = require("./Product");
 
 class Cart extends Model {}
 
@@ -13,6 +13,26 @@ Cart.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    detail: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    brand: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    currency: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    media: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     quantity: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -22,14 +42,14 @@ Cart.init(
       type: DataTypes.INTEGER,
       references: {
         model: Customer,
-        key: 'id',
+        key: "id",
       },
     },
     product_id: {
       type: DataTypes.INTEGER,
       references: {
         model: Product,
-        key: 'id',
+        key: "id",
       },
     },
   },
@@ -38,7 +58,7 @@ Cart.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'cart',
+    modelName: "cart",
   }
 );
 
