@@ -10,9 +10,9 @@ router.get('/:id', async (req, res) => {
                 `email`,
             ],
         });
-        const customerData = dbCustomer.get({ plain: true });
-        res.render('myAccount', {
-            customerData,
+        const customer = dbCustomer.get({ plain: true });
+        res.render('myAcct', {
+            customer,
             logged_in: req.session.logged_in, })
     } catch (err) {
         console.log(err)
