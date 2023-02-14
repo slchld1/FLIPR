@@ -3,7 +3,12 @@
         <div class="main-product-image">
             <img src="{{product.media}}">
         </div>
-
+    <div class="product-details">
     <h1>{{product.title}}</h1>
+    <p>{{product.detail}}</p>
+    <p>${{product.currency}}</p>
+    
+    <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
+    </div>
     </div>
 </section>
