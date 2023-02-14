@@ -29,7 +29,7 @@ body {
   overflow-wrap: break-word;
 }
 .main-product-container {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   flex-wrap: row wrap;
@@ -63,7 +63,7 @@ body {
   padding: 1rem;
   overflow-wrap: break-word;
 }
-@media only screen and (max-width: 1370px){
+@media only screen and (max-width: 1278px){
   img{
     width: 20rem;
     display: flex;
