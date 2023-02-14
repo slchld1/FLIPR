@@ -41,7 +41,7 @@ router.get('/:id', async (req, res) => {
                     ],
         });
         const product = productDB.get({ plain: true });
-        res.render('shop', { product })
+        res.render('product', { product })
     } catch (err) {
         console.log(err)
         res.status(500).json(err)
