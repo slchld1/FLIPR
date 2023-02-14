@@ -65,8 +65,13 @@ body {
   overflow-wrap: break-word;
 }
 
-.shipping-sub{
+.shipping-sub {
   color: rgba(0, 0, 0, 0.678);
+}
+
+.modal-footer {
+  display:flex;
+  margin-right: 170px;
 }
 
 @media only screen and (max-width: 1278px){

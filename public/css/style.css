@@ -98,6 +98,13 @@ body {
   padding: 0 15px;
 }
 
+.logout {
+  display: inline-block;
+  /* float: left; */
+  padding: 0 15px;
+
+}
+
 .join {
   padding-left: 10px;
 }
