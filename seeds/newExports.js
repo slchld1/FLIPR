@@ -40,6 +40,14 @@ const productData =
         "brand": "Tommy Jeans",
         "currency": 35, 
         "media":"https://images.asos-media.com/products/tommy-jeans-linear-back-logo-classic-fit-t-shirt-in-white/204039075-1-white"
+    },
+    {
+        "id": 6,
+        "title": "Levi's 501 original shorts in black",
+        "detail": "High rise",
+        "brand": "Levi's",
+        "currency": 40, 
+        "media":"https://images.asos-media.com/products/levis-501-original-shorts-in-black/204386093-1-stowaway"
     }
     ]
 
