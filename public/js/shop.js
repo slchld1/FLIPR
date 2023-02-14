@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  $(document).ready(function() {  
+    $('#cartModal').modal('show');
+  });

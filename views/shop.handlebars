@@ -12,10 +12,28 @@
         <div class="card-body">
           <h5 class="card-title">{{this.title}}</h5>
           <p class="card-text">${{this.currency}}</p>
-          <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit">Add to cart</a>
+          <a href="/cart" class="btn btn-dark btn-sm px-5 cart-button" type="submit" data-toggle="modal" data-target="#cartModal">Add to cart</a>
         </div>
       </div>
     </div>
     {{/each}}
+  </div>
+</div>
+
+<!-- Modal for added to cart -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Added to Cart</h5>
+        <button type="button" class="btn-close" data-dismiss="modal"  aria-label="Close"></button>
+      </div>
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="/cart" type="submit" class="btn btn-dark">
+        View Cart</button></a>
+      </div>
+    </div>
   </div>
 </div>
