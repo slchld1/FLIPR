@@ -8,6 +8,6 @@ const myAccRoutes = require('./myAcc.js')
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/products', productRoutes);
-router.use('/myAccount')
+router.use('/myAccount', myAccRoutes)
 
 module.exports = router;
