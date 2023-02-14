@@ -33,7 +33,7 @@ router.post("/add/:id", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-  ///// If the cart does not exist, create a new cart for the er
+
 });
 
 module.exports = router;
