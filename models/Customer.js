@@ -37,13 +37,6 @@ Customer.init(
                 len: [8],
             },
         },
-        // addeditem: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        //     validate: {
-        //         len: [8],
-        //     },
-        // },
     },
     {
         hooks: {
