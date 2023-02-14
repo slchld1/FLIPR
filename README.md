@@ -1,11 +1,36 @@
-# FLIPR
+<h1 align="center">FLIPR</h1>
+<p>
+    <img src="https://img.shields.io/github/repo-size/slchld1/project_e-commerce_" />
+    <img src="https://img.shields.io/github/languages/top/slchld1/project_e-commerce_"  />
+    <img src="https://img.shields.io/github/last-commit/slchld1/project_e-commerce_" />
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen"/>
+</p>
 
-## Description
+## Description 💾
 
-## User story
+## User Story ✉️
+~~~
 
-## Process
+~~~
+## Acceptance Criteria 📩
+~~~
 
-## Credits
+~~~
+## Table of Contents 🔍
+* [Installation](#installation-)
+* [Usage](#usage-)
+* [Questions](#questions-)
+* [License](#license)
+## Installation 🔨
 
-## Questions
+## Usage 💡
+
+
+## License
+MIT License
+
+
+## Questions ❓
+
+
+
