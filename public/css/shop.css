@@ -63,6 +63,10 @@ body {
   padding: 1rem;
   overflow-wrap: break-word;
 }
+.shipping-sub{
+  color: rgba(0, 0, 0, 0.678);
+}
+
 @media only screen and (max-width: 1278px){
   img{
     width: 20rem;
