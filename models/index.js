@@ -16,7 +16,7 @@ Products.belongsToMany(Customer, {
   foreignKey: 'product_id',
 });
 
-Customer.belongsToMany(Product, {
+Customer.belongsToMany(Products, {
   through: Cart,
   foreignKey: 'customer_id',
 });
