@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { Customer } = require('../models')
 
-
-
 router.get('/:id', async (req, res) => {
     try {
         const dbCustomer = await Customer.findByPk(req.params.id, {

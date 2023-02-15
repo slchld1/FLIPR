@@ -24,7 +24,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-
 router.get('/join', async(req, res) => {
     res.render('join');
 });
@@ -60,7 +59,7 @@ router.get('/cart', async(req, res) => {
     if  (req.session.logged_in) {
         res.render('cart', { logged_in: true, myaccount: true });
     } else {
-        res.render('cart', { logged_in: false, myaccount:false  });
+        res.render('cart', { logged_in: false, myaccount: false });
     }
 });
 

@@ -1,10 +1,14 @@
-<section class="my-account">
-  <div class="account-info">
-    <h2>Welcome Back, {{customer.name}}!</h2>
-    <section class="account-detail">
-    <p>Email: {{customer.email}}</p>
-    <p></p>
-    </section>
+<div class="container">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5 account-card">
+      <div class="card">
+        <h5 class="card-header">Welcome Back, {{customer.name}}!</h5>
+          <div class="card-body">
+            <h5 class="card-title">Name: {{customer.name}}</h5>
+            <h5 class="card-title">Email: {{customer.email}}</h5>
+            <a href="#" class="btn btn-dark">EDIT</a>
+          </div>
+        </div>
+    </div>
   </div>
-</section>
-
+</div>
