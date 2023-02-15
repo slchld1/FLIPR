@@ -92,7 +92,15 @@
                     </li>
                         {{/if}}
                  
-                  <a class="nav-link" href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a class="nav-link" href="/cart">
+  {{#if logged_in}}
+    <i class="fa-solid fa-cart-shopping"></i>
+  {{else}}
+    <i class="fa-solid fa-cart-shopping"></i>
+  {{/if}}
+  </a>
+                 
+                   
                 </div>
         </nav>
   </header>
