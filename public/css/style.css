@@ -139,6 +139,10 @@ body {
   height: 70%;
 }
 
+.hide {
+  display: none;
+}
+
 
 @media only screen and (max-width: 760px){
   .signbtn, .logbtn, .add-class-btn{

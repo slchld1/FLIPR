@@ -5,21 +5,25 @@ const { Customer } = require('../models');
 
 router.get('/', async (req, res) => {
     try {
-        const userData = await Customer.findAll({
-            attributes: {exclude: ['password']},
-            order: [['name', 'ASC']],
+        const dbCustomer = await Customer.findByPk(req.session.user_id, {
+            attributes: [
+                `id`,
+                `name`,
+                `email`,
+            ],
         });
-
-        const users = userData.map((project) => project.get({ plain: true }));
-
+        console.log(req.session)
+        const customer = dbCustomer.get({ plain: true });
+        console.log(customer)
         res.render('home', {
-            users,
-            logged_in: req.session.logged_in,
-        });
-    }   catch (err) {
-            res.status(500).json(err);
+            customer,
+            logged_in: req.session.logged_in, })
+    } catch (err) {
+        console.log(err)
+        res.status(500).json(err)
     }
 });
+
 
 router.get('/join', async(req, res) => {
     res.render('join');

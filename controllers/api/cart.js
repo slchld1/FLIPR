@@ -16,7 +16,7 @@ router.post("/add/:id", async (req, res) => {
         // customer_id: req.body.customer_id
       });
       // Find the user's cart
-      const user = await Customer.findByPk(req.params.id, {
+      const user = await Customer.findByPk(req.session.user_id, {
         include: [{ model: Cart}]
       });
 
