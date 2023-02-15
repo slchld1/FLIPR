@@ -4,26 +4,29 @@ const withAuth = require('../utils/auth');
 const { Customer } = require('../models');
 
 router.get('/', async (req, res) => {
-    try {
-        const dbCustomer = await Customer.findByPk(req.session.user_id, {
+    if(!req.session.logged_in){
+        res.redirect('/login')
+    }else {
+
+        try {
+            const dbCustomer = await Customer.findByPk(req.session.user_id, {
             attributes: [
                 `id`,
                 `name`,
                 `email`,
             ],
         });
-        console.log(req.session)
         const customer = dbCustomer.get({ plain: true });
-        console.log(customer)
         res.render('home', {
             customer,
             logged_in: req.session.logged_in, })
-    } catch (err) {
-        console.log(err)
-        res.status(500).json(err)
+        } catch (err) {
+            console.log(err)
+            res.status(500).json(err)
+        }
     }
-});
-
+    });
+    
 
 router.get('/join', async(req, res) => {
     res.render('join');
@@ -34,7 +37,6 @@ router.get('/login', async(req, res) => {
         res.redirect('/');
         return;
     }
-
     res.render('login');
 });
 

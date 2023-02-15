@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="/css/join.css">
   <link rel="stylesheet" type="text/css" href="/css/cart.css">
   <link rel="stylesheet" type="text/css" href="/css/home.css">
-
+  <link rel="stylesheet" type="text/css" href="/css/popupS.css">
   <title>FLIPR</title>
 </head>
 
@@ -47,11 +47,7 @@
 
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item active">
-                        {{#if home}}
                         <a class="nav-link selected-nav-link" href="/">Home</a>
-                        {{else}}
-                        <a class="nav-link" href="/">Home</a>
-                        {{/if}}
                     </li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="/products">SHOP</a></li>
                       
@@ -65,33 +61,19 @@
                     
                     {{#if logged_in}}
                     <li class="nav-item login">
-                        {{#if myAccount}}
                         <a class="nav-link selected-nav-link" href="/myAccount/{{customer.id}}">My account</a>
-                        {{else}}
-                        <a class="nav-link" href="/myAccount/{{customer.id}}">My account</a>
-                        {{/if}}
                     </li>
                     <li class="nav-item logout">
                         <a class="nav-link" id="log-in-out">Log out</a>
                     </li>
                     {{else}}
                     <li class="nav-item login">
-                        {{#if login}}
                         <a class="nav-link selected-nav-link" href="/login">Log In</a>
-                        {{else}}
-                        <a class="nav-link" href="/login">Log In</a>
-                        {{/if}}
                     </li>
-                    
                     <li class="nav-item join">
-                        {{#if signup}}
                         <a class="nav-link selected-nav-link" href="/join">Join</a>
-                        {{else}}
-                        <a class="nav-link" href="/join">Join</a>
-                        {{/if}}
                     </li>
-                        {{/if}}
-                 
+                    {{/if}}
                   <a class="nav-link" href="/cart">
   {{#if logged_in}}
     <i class="fa-solid fa-cart-shopping"></i>

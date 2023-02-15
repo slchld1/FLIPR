@@ -2,28 +2,31 @@ const router = require('express').Router();
 const { Products } = require('../models')
 const { Customer } = require('../models')
 router.get('/', async (req, res) => {
+    if(!req.session.logged_in){
+        res.redirect('/login')
+    }else {
 
-    try {
-        const dbCustomer = await Customer.findByPk(req.session.user_id, {
-            attributes: [
-                `id`,
-                `name`,
-                `email`,
-            ],
-        });
-        console.log(req.session)
-        const customer = dbCustomer.get({ plain: true });
-        const dbProduct = await Products.findAll({        
-            attributes: [
-                'id',
-                'title',
-                'detail',
-                'brand',
-                'currency',
-                'media',
-            ],
-        });
-        const products = dbProduct.map((products) =>
+        try {
+            const dbCustomer = await Customer.findByPk(req.session.user_id, {
+                attributes: [
+                    `id`,
+                    `name`,
+                    `email`,
+                ],
+            });
+            console.log(req.session)
+            const customer = dbCustomer.get({ plain: true });
+            const dbProduct = await Products.findAll({        
+                attributes: [
+                    'id',
+                    'title',
+                    'detail',
+                    'brand',
+                    'currency',
+                    'media',
+                ],
+            });
+            const products = dbProduct.map((products) =>
             products.get({ plain: true })
         );
 
@@ -36,6 +39,7 @@ router.get('/', async (req, res) => {
         console.log(err);
         res.status(500).json(err);
     }
+}
 });
 
 router.get('/:id', async (req, res) => {
