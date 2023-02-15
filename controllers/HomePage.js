@@ -53,8 +53,11 @@ router.get('/login', async(req, res) => {
 // })
 
 router.get('/cart', async(req, res) => {
-    res.render('cart');
+    if  (req.session.logged_in) {
+        res.render('cart', { logged_in: true, myaccount: true });
+    } else {
+        res.render('cart', { logged_in: false, myaccount:false  });
+    }
 });
-
 
 module.exports = router;
