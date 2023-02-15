@@ -1,3 +1,7 @@
+body {
+    padding-top: 160px;
+}
+
 .account-card {
-    margin-left: 150px;
+    margin-bottom: 150px;
 }
