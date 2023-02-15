@@ -1,9 +1,19 @@
 const router = require('express').Router();
 const { Products } = require('../models')
-
+const { Customer } = require('../models')
 router.get('/', async (req, res) => {
+
     try {
-        const dbProduct = await Products.findAll({
+        const dbCustomer = await Customer.findByPk(req.session.user_id, {
+            attributes: [
+                `id`,
+                `name`,
+                `email`,
+            ],
+        });
+        console.log(req.session)
+        const customer = dbCustomer.get({ plain: true });
+        const dbProduct = await Products.findAll({        
             attributes: [
                 'id',
                 'title',
@@ -18,6 +28,7 @@ router.get('/', async (req, res) => {
         );
 
         res.render('shop', {
+            customer,
             products,
             logged_in: req.session.logged_in,
         });
