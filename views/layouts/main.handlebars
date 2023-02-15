@@ -66,9 +66,9 @@
                     {{#if logged_in}}
                     <li class="nav-item login">
                         {{#if myAccount}}
-                        <a class="nav-link selected-nav-link" href="/myAccount/{{this.id}}">My account</a>
+                        <a class="nav-link selected-nav-link" href="/myAccount/{{customer.id}}">My account</a>
                         {{else}}
-                        <a class="nav-link" href="/myAccount/{{this.id}}">My account</a>
+                        <a class="nav-link" href="/myAccount/{{customer.id}}">My account</a>
                         {{/if}}
                     </li>
                     <li class="nav-item logout">
