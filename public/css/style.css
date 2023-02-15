@@ -134,6 +134,12 @@ body {
   margin-bottom: 40px;
 }
 
+.my-account {
+  width: 100%;
+  height: 70%;
+}
+
+
 @media only screen and (max-width: 760px){
   .signbtn, .logbtn, .add-class-btn{
     padding: 5px 10px;
