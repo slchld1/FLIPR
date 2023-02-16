@@ -44,6 +44,15 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
+        const dbCustomer = await Customer.findByPk(req.session.user_id, {
+            attributes: [
+                `id`,
+                `name`,
+                `email`,
+            ],
+        });
+        console.log(req.session)
+        const customer = dbCustomer.get({ plain: true });
         const productDB = await Products.findByPk(req.params.id, {
                     attributes: [
                         'id',
@@ -56,7 +65,8 @@ router.get('/:id', async (req, res) => {
         });
         const product = productDB.get({ plain: true });
         res.render('product', { 
-            product, 
+            product,
+            customer, 
             logged_in: req.session.logged_in,})
     } catch (err) {
         console.log(err)
