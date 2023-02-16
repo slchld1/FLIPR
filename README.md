@@ -60,15 +60,28 @@ Finally, you can run `npm start` to run the application on `localhost:3001`
 
 ## Usage 💡
 ![Example Picture 1](./public/images/readme_img1.jpg)
+
+First directory takes us to the login page, where you can register and login to access the application.
+
 ![Example Picture 2](./public/images/readme_img2.jpg)
+
+Next directory is our homepage with many different options such as, myaccount page, shop, or carts.
+
 ![Example Picture 3](./public/images/readme_img3.jpg)
+
+Then we can shop for products and add them to cart, or search for keywords.
+
 ![Example Picture 4](./public/images/readme_img4.jpg)
+
+Finally, we can view our added products in our cart.
 
 ## License
 MIT License
 
 
 ## Questions ❓
+For any Additional questions, Please reach out to: jaecho203@gmail.com
 
+Or visit slchld1 on github! Thank you.
 
 
