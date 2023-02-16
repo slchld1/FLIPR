@@ -3,7 +3,7 @@ const { Customer } = require('../models')
 
 router.get('/:id', async (req, res) => {
     try {
-        const dbCustomer = await Customer.findByPk(req.params.id, {
+        const dbCustomer = await Customer.findByPk(req.session.user_id, {
             attributes: [
                 `id`,
                 `name`,
