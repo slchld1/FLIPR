@@ -7,6 +7,11 @@
 </p>
 
 ## Description 💾
+FLIPR is a web application created using sequelize and express js. It is a demonstration of an e-commerce website for
+
+clothing brands. We use `express-sessions` to authenticate each users to store data and handlebars to display different web 
+
+application pages. 
 
 ## User Story ✉️
 ~~~
@@ -34,9 +39,30 @@ THEN I can view products added in my cart
 * [Questions](#questions-)
 * [License](#license)
 ## Installation 🔨
+To use this application direct to the git repo, git clone the repo down to your local.
+
+Run `npm install` or `npm i` in order to install the following npm package,
+
+* [`express`](https://www.npmjs.com/package/express)
+* [`bcrypt`](https://www.npmjs.com/package/bcrypt)
+* [`connect-session-sequelize`](https://www.npmjs.com/package/connect-session-sequelize)
+* [`dotenv`](https://www.npmjs.com/package/dotenv)
+* [`express-handlebars`](https://www.npmjs.com/package/express-handlebars)
+* [`express-session`](https://www.npmjs.com/package/express-sessions)
+* [`mysql2`](https://www.npmjs.com/package/mysql2)
+* [`sequelize`](https://www.npmjs.com/package/sequelize)
+
+Direct to the db file and `source schema.sql`
+
+Then run `npm run seed` to import existing database.
+
+Finally, you can run `npm start` to run the application on `localhost:3001`
 
 ## Usage 💡
-
+![Example Picture 1](./public/images/readme_img1.jpg)
+![Example Picture 2](./public/images/readme_img2.jpg)
+![Example Picture 3](./public/images/readme_img3.jpg)
+![Example Picture 4](./public/images/readme_img4.jpg)
 
 ## License
 MIT License

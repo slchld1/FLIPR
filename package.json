@@ -9,7 +9,7 @@
         "seed": "node seeds/seeds.js && node seeds/newExports.js"
             
     },
-    "authors": "Olivia, Brandon, Minjae",
+    "authors": "Olivia, Minjae, Brandon",
     "dependencies": {
         "bcrypt": "^5.0.0",
         "connect-session-sequelize": "^7.0.4",
