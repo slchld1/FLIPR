@@ -7,7 +7,6 @@ router.get('/', async (req, res) => {
     if(!req.session.logged_in){
         res.redirect('/login')
     }else {
-
         try {
             const dbCustomer = await Customer.findByPk(req.session.user_id, {
             attributes: [
