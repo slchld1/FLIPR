@@ -59,6 +59,7 @@ Then run `npm run seed` to import existing database.
 Finally, you can run `npm start` to run the application on `localhost:3001`
 
 ## Usage 💡
+Application deployed on heroku: https://tranquil-peak-34941.herokuapp.com/login
 ![Example Picture 1](./public/images/readme_img1.jpg)
 
 First directory takes us to the login page, where you can register and login to access the application.
