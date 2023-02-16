@@ -34,6 +34,8 @@ THEN I can view products added in my cart
 * [Usage](#usage-)
 * [Questions](#questions-)
 * [License](#license)
+* [Contributors](#contributors)
+
 ## Installation 🔨
 To use this application direct to the git repo, git clone the repo down to your local.
 
