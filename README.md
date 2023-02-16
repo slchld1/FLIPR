@@ -7,11 +7,7 @@
 </p>
 
 ## Description 💾
-FLIPR is a web application created using sequelize and express js. It is a demonstration of an e-commerce website for
-
-clothing brands. We use `express-sessions` to authenticate each users to store data and handlebars to display different web 
-
-application pages. 
+FLIPR is a web application created using sequelize and express js. It is a demonstration of an e-commerce website for clothing brands. We use `express-sessions` to authenticate each users to store data and handlebars to display different web application pages. 
 
 ## User Story ✉️
 ~~~
@@ -79,10 +75,10 @@ Finally, we can view our added products in our cart.
 ## License
 MIT License
 
+## Contributors
+- [Minjae Cho](https://github.com/slchld1)
+- [Olivia Seonyeong Lee](https://github.com/oliviasylee)
+- [Brandon Oroszco](https://github.com/Brandon42900)
 
 ## Questions ❓
-For any Additional questions, Please reach out to: jaecho203@gmail.com
-
-Or visit slchld1 on github! Thank you.
-
-
+For any Additional questions, Please reach out to: jaecho203@gmail.com, oliviasylee@gmail.com, brandon42900@gmail.com or visit slchld1, oliviasylee, Brandon42900 on github! Thank you.
