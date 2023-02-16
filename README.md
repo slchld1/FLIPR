@@ -81,4 +81,4 @@ MIT License
 - [Brandon Oroszco](https://github.com/Brandon42900)
 
 ## Questions ❓
-For any Additional questions, Please reach out to: jaecho203@gmail.com, oliviasylee@gmail.com, Brandonorozco10@gmail.com or visit slchld1, oliviasylee, Brandon42900 on github! Thank you.
+For any Additional questions, Please reach out to: jaecho203@gmail.com, oliviasylee@gmail.com, Brandonorozco10@gmail.com or visit [slchld1](https://github.com/slchld1), [oliviasylee](https://github.com/oliviasylee), [Brandon42900](https://github.com/Brandon42900) on github! Thank you.
