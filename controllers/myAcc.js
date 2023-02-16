@@ -12,7 +12,7 @@ router.get('/:id', async (req, res) => {
         });
         const customer = dbCustomer.get({ plain: true });
         console.log(customer)
-        res.render('myAcct', {
+        res.render('myacct', {
             customer,
             logged_in: req.session.logged_in, })
     } catch (err) {
